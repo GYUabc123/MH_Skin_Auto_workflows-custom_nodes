@@ -1,0 +1,264 @@
+{
+  "8": {
+    "inputs": {
+      "samples": [
+        "31",
+        0
+      ],
+      "vae": [
+        "39",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "31": {
+    "inputs": {
+      "seed": 1016512003501403,
+      "steps": 5,
+      "cfg": 1,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "sgm_uniform",
+      "denoise": 0.1,
+      "model": [
+        "61",
+        0
+      ],
+      "positive": [
+        "45",
+        0
+      ],
+      "negative": [
+        "42",
+        0
+      ],
+      "latent_image": [
+        "69",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "38": {
+    "inputs": {
+      "unet_name": "F.1-Fill-fp16_Inpaint&Outpaint_1.0.safetensors",
+      "weight_dtype": "fp8_e5m2"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "39": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "40": {
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "DualCLIPLoader"
+    }
+  },
+  "42": {
+    "inputs": {
+      "conditioning": [
+        "45",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "45": {
+    "inputs": {
+      "text": "preserving its original look and likeness, best quality, highly detailed, sharp focus, ultra sharp, photorealistic, 8k uhd, high resolution, detailed skin texture, natural lighting, crisp edges, fine details, professional photography, RAW photo, keep original cloth",
+      "clip": [
+        "40",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "53": {
+    "inputs": {
+      "width": 600,
+      "height": 800,
+      "model_type": "auto",
+      "method": "yarn",
+      "yarn_alt_scaling": true,
+      "enable_dype": true,
+      "base_resolution": 608,
+      "dype_start_sigma": 0.8,
+      "dype_scale": 3,
+      "dype_exponent": 2,
+      "base_shift": 0.5,
+      "max_shift": 1.4,
+      "model": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "DyPE_FLUX",
+    "_meta": {
+      "title": "DyPE"
+    }
+  },
+  "61": {
+    "inputs": {
+      "sage_attention": "auto",
+      "allow_compile": false,
+      "model": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "68": {
+    "inputs": {
+      "image": "input_6adb6869.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "69": {
+    "inputs": {
+      "pixels": [
+        "68",
+        0
+      ],
+      "vae": [
+        "39",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "70": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_ualtc_00003_.png&type=temp&subfolder=&rand=0.8345851415608329"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_ualtc_00004_.png&type=temp&subfolder=&rand=0.11949814872858533"
+          }
+        ]
+      },
+      "image_a": [
+        "71",
+        0
+      ],
+      "image_b": [
+        "68",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "71": {
+    "inputs": {
+      "upscale_model": [
+        "72",
+        0
+      ],
+      "image": [
+        "118",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Upscale Image (using Model)"
+    }
+  },
+  "72": {
+    "inputs": {
+      "model_name": "4xFFHQDAT.safetensors"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
+  },
+  "73": {
+    "inputs": {
+      "images": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "117": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "118": {
+    "inputs": {
+      "contrast": 0.9,
+      "brightness": 1.2,
+      "saturation": 1.1,
+      "hue": 0,
+      "gamma": 1,
+      "image": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "ColorAdjust(FaceParsing)",
+    "_meta": {
+      "title": "ColorAdjust(FaceParsing)"
+    }
+  }
+}
