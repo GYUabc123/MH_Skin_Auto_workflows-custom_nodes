@@ -181,7 +181,7 @@
         ]
       },
       "image_a": [
-        "71",
+        "119",
         0
       ],
       "image_b": [
@@ -222,7 +222,7 @@
   "73": {
     "inputs": {
       "images": [
-        "71",
+        "119",
         0
       ]
     },
@@ -233,9 +233,9 @@
   },
   "117": {
     "inputs": {
-      "filename_prefix": "Auto_Enhanced",
+      "filename_prefix": "ComfyUI",
       "images": [
-        "71",
+        "119",
         0
       ]
     },
@@ -259,6 +259,22 @@
     "class_type": "ColorAdjust(FaceParsing)",
     "_meta": {
       "title": "ColorAdjust(FaceParsing)"
+    }
+  },
+  "119": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 1024,
+      "crop": "disabled",
+      "image": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
     }
   }
 }

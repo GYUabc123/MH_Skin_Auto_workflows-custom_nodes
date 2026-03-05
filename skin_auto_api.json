@@ -198,7 +198,7 @@
   "28": {
     "inputs": {
       "lora_name": "AWPortrait CN_1.0.safetensors",
-      "strength_model": 0.35000000000000003,
+      "strength_model": 0.35,
       "strength_clip": 1,
       "model": [
         "10",
@@ -248,7 +248,7 @@
     "inputs": {
       "filename_prefix": "Skin+Auto_Enhanced",
       "images": [
-        "61",
+        "97",
         0
       ]
     },
@@ -274,7 +274,7 @@
         ]
       },
       "image_a": [
-        "61",
+        "97",
         0
       ],
       "image_b": [
@@ -549,7 +549,7 @@
         ]
       },
       "image_a": [
-        "61",
+        "97",
         0
       ],
       "image_b": [
@@ -560,6 +560,22 @@
     "class_type": "Image Comparer (rgthree)",
     "_meta": {
       "title": "Final and Skin"
+    }
+  },
+  "97": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "width": 512,
+      "height": 512,
+      "crop": "disabled",
+      "image": [
+        "61",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
     }
   }
 }
