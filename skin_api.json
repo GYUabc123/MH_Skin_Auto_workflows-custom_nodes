@@ -162,7 +162,7 @@
   },
   "50": {
     "inputs": {
-      "filename_prefix": "Skin Enhance",
+      "filename_prefix": "Skin Enhancement",
       "images": [
         "87",
         0
@@ -235,19 +235,6 @@
     "class_type": "Image Comparer (rgthree)",
     "_meta": {
       "title": "Image Comparer (rgthree)"
-    }
-  },
-  "73": {
-    "inputs": {
-      "text": "A close-up portrait of a young man with a neutral expression, looking directly at the camera with a slight smile. he has short, dark brown hair styled in a neat, slicked-back manner and a full beard. his eyes are a striking green color, and he is wearing a plain white t-shirt. the background is a simple, muted gray, providing a subtle contrast to the man's neutral expression. the lighting is soft and natural, highlighting his facial features and the texture of his beard. he is positioned in the middle of the image, with his upper body visible, and his face is slightly tilted to the side, giving a sense of depth and perspective. the image has a high-quality, professional look, with a focus on the individual's face and facial features., film grain, subtle noise, soft skin, cinematic, analog photo, slight blur, natural imperfections, snapshot photo, no added red marks, no added acne",
-      "anything": [
-        "75",
-        0
-      ]
-    },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "Show Any"
     }
   },
   "75": {

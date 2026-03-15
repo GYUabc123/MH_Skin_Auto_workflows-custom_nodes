@@ -30,7 +30,7 @@
   },
   "9": {
     "inputs": {
-      "filename_prefix": "Auto Enhance",
+      "filename_prefix": "Auto Enhancement",
       "images": [
         "136",
         0
@@ -366,32 +366,6 @@
     "class_type": "EasySizeSimpleImage",
     "_meta": {
       "title": "Resize for Blur Detection (512px)"
-    }
-  },
-  "151": {
-    "inputs": {
-      "text": "0.45723445599824186",
-      "anything": [
-        "148",
-        0
-      ]
-    },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "Show Any"
-    }
-  },
-  "152": {
-    "inputs": {
-      "text": "1818.4369600117207",
-      "anything": [
-        "149",
-        0
-      ]
-    },
-    "class_type": "easy showAnything",
-    "_meta": {
-      "title": "Show Any"
     }
   }
 }
