@@ -106,7 +106,7 @@
       "text_input": "",
       "task": "more_detailed_caption",
       "fill_mask": false,
-      "keep_model_loaded": false,
+      "keep_model_loaded": true,
       "max_new_tokens": 1024,
       "num_beams": 3,
       "do_sample": false,
