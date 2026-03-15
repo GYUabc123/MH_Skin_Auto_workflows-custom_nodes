@@ -44,7 +44,7 @@
   "17": {
     "inputs": {
       "samples": [
-        "29",
+        "95",
         0
       ],
       "vae": [
@@ -68,18 +68,6 @@
     "class_type": "CLIPTextEncode",
     "_meta": {
       "title": "CLIP Text Encode (Prompt)"
-    }
-  },
-  "29": {
-    "inputs": {
-      "anything": [
-        "95",
-        0
-      ]
-    },
-    "class_type": "easy cleanGpuUsed",
-    "_meta": {
-      "title": "Clean VRAM Used"
     }
   },
   "62": {
