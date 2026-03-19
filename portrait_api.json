@@ -8,18 +8,6 @@
       "title": "Load VAE"
     }
   },
-  "11": {
-    "inputs": {
-      "conditioning": [
-        "19",
-        0
-      ]
-    },
-    "class_type": "ConditioningZeroOut",
-    "_meta": {
-      "title": "ConditioningZeroOut"
-    }
-  },
   "13": {
     "inputs": {
       "unet_name": "flux-2-klein-9b.safetensors",
@@ -59,7 +47,7 @@
   },
   "19": {
     "inputs": {
-      "text": "",
+      "text": "Do not alter this person's face, lips, skin color, or facial structure in any way. Same face, same lips, same skin color, same expression, same background, and blur background. Remove only visible acne or blemishes on the skin without smoothing, softening, or altering any facial features. Do not add anything to the skin — no, acne, no moles, no spots, no dots, no marks, no freckles. Keep all natural skin texture. Do not change the background color. Realistic snapshot phote with beauty filter, retouching",
       "clip": [
         "14",
         0
@@ -70,11 +58,25 @@
       "title": "CLIP Text Encode (Prompt)"
     }
   },
+  "38": {
+    "inputs": {
+      "lora_name": "flux-2-klein-NSFW.safetensors",
+      "strength_model": 0.6,
+      "model": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
   "62": {
     "inputs": {
-      "filename_prefix": "General",
+      "filename_prefix": "Portrait Enhancer",
       "images": [
-        "17",
+        "151",
         0
       ]
     },
@@ -85,7 +87,7 @@
   },
   "63": {
     "inputs": {
-      "image": "Screenshot 2026-02-19 192553.png"
+      "image": "myself2.jpg"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -95,7 +97,7 @@
   "73": {
     "inputs": {
       "conditioning": [
-        "11",
+        "146",
         0
       ],
       "latent": [
@@ -181,14 +183,14 @@
   },
   "95": {
     "inputs": {
-      "seed": 398970493560331,
-      "steps": 6,
+      "seed": 889061168510594,
+      "steps": 2,
       "cfg": 1,
       "sampler_name": "euler",
       "scheduler": "simple",
-      "denoise": 1,
+      "denoise": 0.95,
       "model": [
-        "13",
+        "144",
         0
       ],
       "positive": [
@@ -207,6 +209,81 @@
     "class_type": "KSampler",
     "_meta": {
       "title": "KSampler"
+    }
+  },
+  "143": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_apuek_00055_.png&type=temp&subfolder=&rand=0.6546714493838165"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_apuek_00056_.png&type=temp&subfolder=&rand=0.8322506625065168"
+          }
+        ]
+      },
+      "image_a": [
+        "151",
+        0
+      ],
+      "image_b": [
+        "90",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "144": {
+    "inputs": {
+      "lora_name": "Klein_9B-anything2real.safetensors",
+      "strength_model": 0.5,
+      "model": [
+        "38",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "146": {
+    "inputs": {
+      "conditioning": [
+        "19",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "151": {
+    "inputs": {
+      "method": "mkl",
+      "image_output": "Hide",
+      "save_prefix": "ComfyUI",
+      "image_ref": [
+        "90",
+        0
+      ],
+      "image_target": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "easy imageColorMatch",
+    "_meta": {
+      "title": "Image Color Match"
     }
   }
 }

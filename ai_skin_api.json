@@ -59,12 +59,12 @@
   },
   "18": {
     "inputs": {
-      "seed": 486943977598201,
+      "seed": 430595897745173,
       "steps": 6,
       "cfg": 1,
       "sampler_name": "euler",
       "scheduler": "normal",
-      "denoise": 0.35,
+      "denoise": 0.25,
       "model": [
         "82",
         0
@@ -101,43 +101,6 @@
       "title": "Load LoRA"
     }
   },
-  "40": {
-    "inputs": {
-      "text_input": "",
-      "task": "more_detailed_caption",
-      "fill_mask": false,
-      "keep_model_loaded": true,
-      "max_new_tokens": 1024,
-      "num_beams": 3,
-      "do_sample": false,
-      "output_mask_select": "",
-      "seed": 8798,
-      "image": [
-        "51",
-        0
-      ],
-      "florence2_model": [
-        "41",
-        0
-      ]
-    },
-    "class_type": "Florence2Run",
-    "_meta": {
-      "title": "Florence2Run"
-    }
-  },
-  "41": {
-    "inputs": {
-      "model": "MiaoshouAI/Florence-2-large-PromptGen-v2.0",
-      "precision": "fp16",
-      "attention": "sdpa",
-      "convert_to_safetensors": false
-    },
-    "class_type": "DownloadAndLoadFlorence2Model",
-    "_meta": {
-      "title": "DownloadAndLoadFlorence2Model"
-    }
-  },
   "43": {
     "inputs": {
       "SD1.5": "关",
@@ -162,7 +125,7 @@
   },
   "50": {
     "inputs": {
-      "filename_prefix": "Skin Enhancement",
+      "filename_prefix": "AI Skin Enhancer",
       "images": [
         "87",
         0
@@ -214,12 +177,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_pjytd_00001_.png&type=temp&subfolder=&rand=0.18455886035161673"
+            "url": "/api/view?filename=rgthree.compare._temp_rrhoe_00001_.png&type=temp&subfolder=&rand=0.40131081176275385"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_pjytd_00002_.png&type=temp&subfolder=&rand=0.08319214431477939"
+            "url": "/api/view?filename=rgthree.compare._temp_rrhoe_00002_.png&type=temp&subfolder=&rand=0.1388258793668644"
           }
         ]
       },
@@ -240,10 +203,6 @@
   "75": {
     "inputs": {
       "separator": ", ",
-      "text1": [
-        "40",
-        2
-      ],
       "text2": [
         "64",
         0

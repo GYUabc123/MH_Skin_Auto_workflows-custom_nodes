@@ -1,7 +1,7 @@
 {
   "6": {
     "inputs": {
-      "text": "very high resolution, preserve natural features, (soft skin: 0.3), no red marks",
+      "text": "Very high resolution, preserve natural features, same face, same expression, same background, (soft skin:0.3). Enhance sharpness of hair only. Reduce noise and grain, remove JPEG artifacts. Correct exposure for natural lighting, neutralize any color cast for natural white balance.",
       "clip": [
         "90",
         0
@@ -30,9 +30,9 @@
   },
   "9": {
     "inputs": {
-      "filename_prefix": "Auto Enhancement",
+      "filename_prefix": "Photo Enhancer",
       "images": [
-        "136",
+        "158",
         0
       ]
     },
@@ -62,15 +62,12 @@
   },
   "77": {
     "inputs": {
-      "seed": 252,
-      "steps": 6,
+      "seed": 832322334923647,
+      "steps": 4,
       "cfg": 1,
       "sampler_name": "euler",
       "scheduler": "beta",
-      "denoise": [
-        "148",
-        0
-      ],
+      "denoise": 0.65,
       "model": [
         "12",
         0
@@ -84,7 +81,7 @@
         0
       ],
       "latent_image": [
-        "135",
+        "114",
         0
       ]
     },
@@ -122,7 +119,7 @@
   },
   "100": {
     "inputs": {
-      "text": "added beard, stubble, mustache, goatee, sideburns, unshaven, added facial hair",
+      "text": "added beard, stubble, mustache, goatee, sideburns, unshaven, added facial hair, added  bright",
       "clip": [
         "90",
         0
@@ -151,7 +148,7 @@
   },
   "113": {
     "inputs": {
-      "image": "myself1 (1).PNG"
+      "image": "me_ernest_debs.jpg"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -181,44 +178,27 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ylsxu_00005_.png&type=temp&subfolder=&rand=0.5083157887738138"
+            "url": "/api/view?filename=rgthree.compare._temp_henen_00037_.png&type=temp&subfolder=&rand=0.4807168022483924"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ylsxu_00006_.png&type=temp&subfolder=&rand=0.5863033093760806"
+            "url": "/api/view?filename=rgthree.compare._temp_henen_00038_.png&type=temp&subfolder=&rand=0.8809666145534444"
           }
         ]
       },
       "image_a": [
-        "136",
+        "133",
         0
       ],
       "image_b": [
-        "133",
+        "158",
         0
       ]
     },
     "class_type": "Image Comparer (rgthree)",
     "_meta": {
       "title": "Image Comparer (rgthree)"
-    }
-  },
-  "132": {
-    "inputs": {
-      "contrast": 0.95,
-      "brightness": 1.15,
-      "saturation": 1.1,
-      "hue": 0,
-      "gamma": 0.93,
-      "image": [
-        "8",
-        0
-      ]
-    },
-    "class_type": "ColorAdjust(FaceParsing)",
-    "_meta": {
-      "title": "ColorAdjust(FaceParsing)"
     }
   },
   "133": {
@@ -236,10 +216,6 @@
       "图像": [
         "113",
         0
-      ],
-      "遮罩": [
-        "134",
-        0
       ]
     },
     "class_type": "EasySizeSimpleImage",
@@ -247,125 +223,40 @@
       "title": "简单图像尺寸"
     }
   },
-  "134": {
+  "157": {
     "inputs": {
-      "face_mask": true,
-      "background_mask": false,
-      "hair_mask": true,
-      "body_mask": true,
-      "clothes_mask": false,
-      "confidence": 0.4,
-      "refine_mask": true,
-      "images": [
-        "113",
-        0
-      ]
-    },
-    "class_type": "APersonMaskGenerator",
-    "_meta": {
-      "title": "A Person Mask Generator"
-    }
-  },
-  "135": {
-    "inputs": {
-      "samples": [
-        "114",
+      "method": "mkl",
+      "image_output": "Hide",
+      "save_prefix": "ComfyUI",
+      "image_ref": [
+        "133",
         0
       ],
-      "mask": [
-        "134",
-        0
-      ]
-    },
-    "class_type": "SetLatentNoiseMask",
-    "_meta": {
-      "title": "Set Latent Noise Mask"
-    }
-  },
-  "136": {
-    "inputs": {
-      "x": 0,
-      "y": 0,
-      "resize_source": false,
-      "destination": [
+      "image_target": [
         "8",
         0
-      ],
-      "source": [
-        "132",
-        0
-      ],
-      "mask": [
-        "137",
-        0
       ]
     },
-    "class_type": "ImageCompositeMasked",
+    "class_type": "easy imageColorMatch",
     "_meta": {
-      "title": "ImageCompositeMasked"
+      "title": "Image Color Match"
     }
   },
-  "137": {
+  "158": {
     "inputs": {
-      "amount": 10,
-      "device": "auto",
-      "mask": [
-        "134",
-        0
-      ]
-    },
-    "class_type": "MaskBlur+",
-    "_meta": {
-      "title": "🔧 Mask Blur"
-    }
-  },
-  "148": {
-    "inputs": {
-      "expression": "max(0.45, min(0.73, 0.73 - (a / 2000.0) * 0.3))",
-      "values.a": [
-        "149",
-        0
-      ]
-    },
-    "class_type": "ComfyMathExpression",
-    "_meta": {
-      "title": "Blur → Denoise Remap"
-    }
-  },
-  "149": {
-    "inputs": {
-      "block_size": 32,
-      "visualize_blur_map": false,
+      "contrast": 1.1,
+      "brightness": 1.08,
+      "saturation": 1.1,
+      "hue": 0,
+      "gamma": 0.93,
       "image": [
-        "150",
+        "157",
         0
       ]
     },
-    "class_type": "Blur Detection",
+    "class_type": "ColorAdjust(FaceParsing)",
     "_meta": {
-      "title": "Blur Detection (512px normalized)"
-    }
-  },
-  "150": {
-    "inputs": {
-      "SD1.5": "关",
-      "SDXL": "关",
-      "FLUX": "关",
-      "WAN": "关",
-      "QWEN": "关",
-      "裁剪方式": "中心裁剪",
-      "缩放算法": "lanczos",
-      "启用边长缩放": true,
-      "缩放至边": "最长边",
-      "缩放长度": 512,
-      "图像": [
-        "113",
-        0
-      ]
-    },
-    "class_type": "EasySizeSimpleImage",
-    "_meta": {
-      "title": "Resize for Blur Detection (512px)"
+      "title": "ColorAdjust(FaceParsing)"
     }
   }
 }
