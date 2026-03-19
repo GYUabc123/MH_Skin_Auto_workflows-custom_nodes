@@ -87,7 +87,7 @@
   },
   "63": {
     "inputs": {
-      "image": "myself2.jpg"
+      "image": "me_ernest_debs.jpg"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -183,7 +183,7 @@
   },
   "95": {
     "inputs": {
-      "seed": 889061168510594,
+      "seed": 405965134834881,
       "steps": 2,
       "cfg": 1,
       "sampler_name": "euler",

@@ -11,7 +11,7 @@
   "11": {
     "inputs": {
       "conditioning": [
-        "78",
+        "92:84",
         0
       ]
     },
@@ -70,7 +70,7 @@
         0
       ],
       "positive": [
-        "78",
+        "92:84",
         0
       ],
       "negative": [
@@ -127,7 +127,7 @@
     "inputs": {
       "filename_prefix": "AI Skin Enhancer",
       "images": [
-        "87",
+        "83",
         0
       ]
     },
@@ -138,7 +138,7 @@
   },
   "51": {
     "inputs": {
-      "image": "Screenshot 2026-02-19 192553.png"
+      "image": "white_man_white_shirt.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -170,36 +170,6 @@
       "title": "补充提示词（可不填）"
     }
   },
-  "71": {
-    "inputs": {
-      "rgthree_comparer": {
-        "images": [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rrhoe_00001_.png&type=temp&subfolder=&rand=0.40131081176275385"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rrhoe_00002_.png&type=temp&subfolder=&rand=0.1388258793668644"
-          }
-        ]
-      },
-      "image_a": [
-        "87",
-        0
-      ],
-      "image_b": [
-        "51",
-        0
-      ]
-    },
-    "class_type": "Image Comparer (rgthree)",
-    "_meta": {
-      "title": "Image Comparer (rgthree)"
-    }
-  },
   "75": {
     "inputs": {
       "separator": ", ",
@@ -215,14 +185,7 @@
   },
   "78": {
     "inputs": {
-      "text": [
-        "75",
-        0
-      ],
-      "clip": [
-        "14",
-        0
-      ]
+      "text": ""
     },
     "class_type": "CLIPTextEncode",
     "_meta": {
@@ -243,11 +206,11 @@
       "title": "Load LoRA"
     }
   },
-  "87": {
+  "83": {
     "inputs": {
-      "method": "mkl",
-      "strength": 1,
-      "multithread": true,
+      "method": "wavelet",
+      "image_output": "Preview",
+      "save_prefix": "ComfyUI",
       "image_ref": [
         "43",
         0
@@ -257,9 +220,25 @@
         0
       ]
     },
-    "class_type": "ColorMatch",
+    "class_type": "easy imageColorMatch",
     "_meta": {
-      "title": "Color Match"
+      "title": "Image Color Match"
+    }
+  },
+  "92:84": {
+    "inputs": {
+      "text": [
+        "75",
+        0
+      ],
+      "clip": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
     }
   }
 }
