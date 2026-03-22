@@ -59,7 +59,7 @@
   },
   "18": {
     "inputs": {
-      "seed": 430595897745173,
+      "seed": 985973771891669,
       "steps": 6,
       "cfg": 1,
       "sampler_name": "euler",
@@ -138,7 +138,7 @@
   },
   "51": {
     "inputs": {
-      "image": "white_man_white_shirt.png"
+      "image": "Screenshot 2026-02-19 192553.png"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -208,7 +208,7 @@
   },
   "83": {
     "inputs": {
-      "method": "wavelet",
+      "method": "mkl",
       "image_output": "Preview",
       "save_prefix": "ComfyUI",
       "image_ref": [
