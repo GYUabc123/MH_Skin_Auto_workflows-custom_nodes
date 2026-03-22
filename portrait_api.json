@@ -47,7 +47,7 @@
   },
   "19": {
     "inputs": {
-      "text": "Do not alter this person's face, lips, skin color, or facial structure in any way. Same face, same lips, same skin color, same expression, same background, and blur background. Remove only visible acne or blemishes on the skin without smoothing, softening, or altering any facial features. Do not add anything to the skin — no, acne, no moles, no spots, no dots, no marks, no freckles. Keep all natural skin texture. Do not change the background color. Realistic snapshot phote with beauty filter, retouching",
+      "text": "Same face, same skin color, same lips, same expression, same background. Keep skin surface smooth and even. Remove only visible acne and blemishes by blending cleanly with surrounding skin. Preserve natural skin texture and pores exactly as they are. Do not change skin tone, face shape, or any facial features. Realistic photo, gentle skin retouching. Blur background",
       "clip": [
         "14",
         0
@@ -61,7 +61,7 @@
   "38": {
     "inputs": {
       "lora_name": "flux-2-klein-NSFW.safetensors",
-      "strength_model": 0.6,
+      "strength_model": 1.05,
       "model": [
         "13",
         0
@@ -170,7 +170,7 @@
       "缩放算法": "lanczos",
       "启用边长缩放": true,
       "缩放至边": "最长边",
-      "缩放长度": 1024,
+      "缩放长度": 1472,
       "图像": [
         "63",
         0
@@ -183,12 +183,12 @@
   },
   "95": {
     "inputs": {
-      "seed": 405965134834881,
+      "seed": 659217399643453,
       "steps": 2,
-      "cfg": 1,
+      "cfg": 0.9,
       "sampler_name": "euler",
       "scheduler": "simple",
-      "denoise": 0.95,
+      "denoise": 1,
       "model": [
         "144",
         0
@@ -218,12 +218,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_apuek_00055_.png&type=temp&subfolder=&rand=0.6546714493838165"
+            "url": "/api/view?filename=rgthree.compare._temp_npxsb_00005_.png&type=temp&subfolder=&rand=0.9031960317525871"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_apuek_00056_.png&type=temp&subfolder=&rand=0.8322506625065168"
+            "url": "/api/view?filename=rgthree.compare._temp_npxsb_00006_.png&type=temp&subfolder=&rand=0.6583889105095755"
           }
         ]
       },
@@ -244,7 +244,7 @@
   "144": {
     "inputs": {
       "lora_name": "Klein_9B-anything2real.safetensors",
-      "strength_model": 0.5,
+      "strength_model": 1,
       "model": [
         "38",
         0
