@@ -270,18 +270,6 @@
       "title": "KSampler"
     }
   },
-  "136": {
-    "inputs": {
-      "images": [
-        "109",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "138": {
     "inputs": {
       "aspect_ratio": "9:16",
@@ -345,6 +333,19 @@
     "class_type": "Image Rotate",
     "_meta": {
       "title": "Image Rotate"
+    }
+  },
+  "143": {
+    "inputs": {
+      "filename_prefix": "Flux2-Klein",
+      "images": [
+        "109",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
     }
   }
 }
