@@ -320,7 +320,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "EasySizeSimpleImage":   "简单图像尺寸",
-    "EasySizeSimpleLatent":  "简单图像尺寸-Latent",
-    "EasySizeSimpleSetting": "简单尺寸设置",
+    "EasySizeSimpleImage":   "ScaleByRatio",
+    "EasySizeSimpleLatent":  "ScaleByRatio",
+    "EasySizeSimpleSetting": "ScaleByRatio",
 }
