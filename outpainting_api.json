@@ -1,7 +1,7 @@
 {
   "76": {
     "inputs": {
-      "image": "image.webp"
+      "image": "me_ernest_debs.jpg"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -182,12 +182,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gdtiq_00009_.png&type=temp&subfolder=&rand=0.6560326359433234"
+            "url": "/api/view?filename=rgthree.compare._temp_gdtiq_00013_.png&type=temp&subfolder=&rand=0.1671811873129727"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gdtiq_00010_.png&type=temp&subfolder=&rand=0.8463763418935875"
+            "url": "/api/view?filename=rgthree.compare._temp_gdtiq_00014_.png&type=temp&subfolder=&rand=0.10095031411687205"
           }
         ]
       },
@@ -233,7 +233,7 @@
   },
   "133": {
     "inputs": {
-      "seed": 589258558797085,
+      "seed": 395760313958051,
       "steps": 15,
       "cfg": 2,
       "sampler_name": "euler",
@@ -317,7 +317,11 @@
   },
   "143": {
     "inputs": {
-      "filename_prefix": "Flux2-Klein"
+      "filename_prefix": "Flux2-Klein",
+      "images": [
+        "144",
+        0
+      ]
     },
     "class_type": "SaveImage",
     "_meta": {
