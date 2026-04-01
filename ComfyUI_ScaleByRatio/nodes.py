@@ -314,13 +314,20 @@ class EasySizeSimpleSetting:
 
 # -------------- 注册 --------------
 NODE_CLASS_MAPPINGS = {
-    "EasySizeSimpleImage":   EasySizeSimpleImage,
-    "EasySizeSimpleLatent":  EasySizeSimpleLatent,
-    "EasySizeSimpleSetting": EasySizeSimpleSetting,
+    # "EasySizeSimpleImage":   EasySizeSimpleImage,
+    # "EasySizeSimpleLatent":  EasySizeSimpleLatent,
+    # "EasySizeSimpleSetting": EasySizeSimpleSetting,
+    # Backward-compatible aliases for existing workflows.
+    "ScaleByRatioImage":     EasySizeSimpleImage,
+    "ScaleByRatioLatent":    EasySizeSimpleLatent,
+    "ScaleByRatioSetting":   EasySizeSimpleSetting,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "EasySizeSimpleImage":   "ScaleByRatio",
-    "EasySizeSimpleLatent":  "ScaleByRatio",
-    "EasySizeSimpleSetting": "ScaleByRatio",
+    # "EasySizeSimpleImage":   "ScaleByRatio",
+    # "EasySizeSimpleLatent":  "ScaleByRatio",
+    # "EasySizeSimpleSetting": "ScaleByRatio",
+    "ScaleByRatioImage":     "ScaleByRatio",
+    "ScaleByRatioLatent":    "ScaleByRatio",
+    "ScaleByRatioSetting":   "ScaleByRatio",
 }
