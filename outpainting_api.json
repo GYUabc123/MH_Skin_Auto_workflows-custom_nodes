@@ -8,51 +8,16 @@
       "title": "Load Image"
     }
   },
-  "102": {
-    "inputs": {
-      "left": 0,
-      "top": 0,
-      "right": 0,
-      "bottom": 0,
-      "feathering": 40,
-      "image": [
-        "140",
-        0
-      ]
-    },
-    "class_type": "ImagePadForOutpaint",
-    "_meta": {
-      "title": "Pad Image for Outpainting"
-    }
-  },
   "103": {
     "inputs": {
       "images": [
-        "104",
+        "148",
         0
       ]
     },
     "class_type": "PreviewImage",
     "_meta": {
       "title": "Preview Image"
-    }
-  },
-  "104": {
-    "inputs": {
-      "color": "0, 0, 0",
-      "device": "cpu",
-      "image": [
-        "102",
-        0
-      ],
-      "mask": [
-        "102",
-        1
-      ]
-    },
-    "class_type": "DrawMaskOnImage",
-    "_meta": {
-      "title": "Draw Mask On Image"
     }
   },
   "109": {
@@ -103,7 +68,7 @@
   },
   "117": {
     "inputs": {
-      "text": "Original content remains unchanged. Naturally extend the scene to fill the black areas. Match the existing lighting, colors, textures, and perspective. ",
+      "text": "remove green area, extend and blend the image scene by referencing elements within the non-black regions.",
       "clip": [
         "112",
         0
@@ -146,7 +111,7 @@
   "125": {
     "inputs": {
       "pixels": [
-        "138",
+        "148",
         0
       ],
       "vae": [
@@ -182,21 +147,21 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gdtiq_00013_.png&type=temp&subfolder=&rand=0.1671811873129727"
+            "url": "/api/view?filename=rgthree.compare._temp_gfkdh_00015_.png&type=temp&subfolder=&rand=0.37015924597127114"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gdtiq_00014_.png&type=temp&subfolder=&rand=0.10095031411687205"
+            "url": "/api/view?filename=rgthree.compare._temp_gfkdh_00016_.png&type=temp&subfolder=&rand=0.9951878425245763"
           }
         ]
       },
       "image_a": [
-        "138",
+        "148",
         0
       ],
       "image_b": [
-        "144",
+        "149",
         0
       ]
     },
@@ -205,22 +170,10 @@
       "title": "Image Comparer (rgthree)"
     }
   },
-  "131": {
-    "inputs": {
-      "images": [
-        "138",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "132": {
     "inputs": {
-      "lora_name": "flux-2-klein-9B-360-erp-outpaint-lora_V1.safetensors",
-      "strength_model": 0.9,
+      "lora_name": "FLUX.1-Turbo-Alpha.safetensors",
+      "strength_model": 1,
       "model": [
         "111",
         0
@@ -233,8 +186,8 @@
   },
   "133": {
     "inputs": {
-      "seed": 395760313958051,
-      "steps": 15,
+      "seed": 230152417374730,
+      "steps": 8,
       "cfg": 2,
       "sampler_name": "euler",
       "scheduler": "simple",
@@ -261,27 +214,6 @@
       "title": "KSampler"
     }
   },
-  "138": {
-    "inputs": {
-      "aspect_ratio": "9:16",
-      "proportional_width": 1,
-      "proportional_height": 1,
-      "fit": "letterbox",
-      "method": "lanczos",
-      "round_to_multiple": 8,
-      "scale_to_side": "shortest",
-      "scale_to_length": 1024,
-      "background_color": "#000000",
-      "图像": [
-        "104",
-        0
-      ]
-    },
-    "class_type": "ScaleByRatioImage",
-    "_meta": {
-      "title": "Scale By Ratio"
-    }
-  },
   "139": {
     "inputs": {
       "images": [
@@ -303,7 +235,7 @@
       "method": "lanczos",
       "round_to_multiple": 8,
       "scale_to_side": "longest",
-      "scale_to_length": 1024,
+      "scale_to_length": 768,
       "background_color": "#000000",
       "图像": [
         "76",
@@ -317,9 +249,9 @@
   },
   "143": {
     "inputs": {
-      "filename_prefix": "Flux2-Klein",
+      "filename_prefix": "outpaint-top-bottom",
       "images": [
-        "144",
+        "149",
         0
       ]
     },
@@ -328,13 +260,48 @@
       "title": "Save Image"
     }
   },
-  "144": {
+  "147": {
+    "inputs": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "feathering": 40,
+      "image": [
+        "140",
+        0
+      ]
+    },
+    "class_type": "ImagePadForOutpaint",
+    "_meta": {
+      "title": "Pad Image for Outpainting"
+    }
+  },
+  "148": {
+    "inputs": {
+      "color": "0, 255, 0",
+      "device": "cpu",
+      "image": [
+        "147",
+        0
+      ],
+      "mask": [
+        "147",
+        1
+      ]
+    },
+    "class_type": "DrawMaskOnImage",
+    "_meta": {
+      "title": "Draw Mask On Image"
+    }
+  },
+  "149": {
     "inputs": {
       "method": "mkl",
       "strength": 0.4,
       "multithread": true,
       "image_ref": [
-        "104",
+        "147",
         0
       ],
       "image_target": [
