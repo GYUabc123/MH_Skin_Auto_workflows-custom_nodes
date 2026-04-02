@@ -68,7 +68,7 @@
   },
   "117": {
     "inputs": {
-      "text": "remove green area, extend and blend the image scene by referencing elements within the non-black regions.",
+      "text": "remove green area, extend and blend the image scene by referencing elements within the non-black regions while preserving original colors.",
       "clip": [
         "112",
         0
@@ -81,7 +81,7 @@
   },
   "118": {
     "inputs": {
-      "text": "text, worst quality, blurry, ugly",
+      "text": "text, worst quality, blurry, ugly, color shift",
       "clip": [
         "112",
         0
@@ -147,12 +147,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gfkdh_00015_.png&type=temp&subfolder=&rand=0.37015924597127114"
+            "url": "/api/view?filename=rgthree.compare._temp_dtuto_00057_.png&type=temp&subfolder=&rand=0.47757761530292464"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gfkdh_00016_.png&type=temp&subfolder=&rand=0.9951878425245763"
+            "url": "/api/view?filename=rgthree.compare._temp_dtuto_00058_.png&type=temp&subfolder=&rand=0.420381664768097"
           }
         ]
       },
@@ -186,7 +186,7 @@
   },
   "133": {
     "inputs": {
-      "seed": 230152417374730,
+      "seed": 885761706382275,
       "steps": 8,
       "cfg": 2,
       "sampler_name": "euler",
@@ -262,9 +262,9 @@
   },
   "147": {
     "inputs": {
-      "left": 0,
+      "left": 400,
       "top": 0,
-      "right": 0,
+      "right": 400,
       "bottom": 0,
       "feathering": 40,
       "image": [
@@ -301,7 +301,7 @@
       "strength": 0.4,
       "multithread": true,
       "image_ref": [
-        "147",
+        "140",
         0
       ],
       "image_target": [
