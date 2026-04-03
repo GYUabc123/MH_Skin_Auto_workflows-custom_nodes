@@ -1,7 +1,7 @@
 {
   "76": {
     "inputs": {
-      "image": "image (4).webp"
+      "image": "michaeljordan.webp"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -147,12 +147,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00051_.png&type=temp&subfolder=&rand=0.8011095795296501"
+            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00083_.png&type=temp&subfolder=&rand=0.346881629136494"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00052_.png&type=temp&subfolder=&rand=0.0679709941600165"
+            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00084_.png&type=temp&subfolder=&rand=0.06211665717258341"
           }
         ]
       },
@@ -186,7 +186,7 @@
   },
   "133": {
     "inputs": {
-      "seed": 295994950688886,
+      "seed": 304708932773483,
       "steps": 14,
       "cfg": 2,
       "sampler_name": "euler",
@@ -262,11 +262,11 @@
   },
   "147": {
     "inputs": {
-      "left": 104,
-      "top": 0,
-      "right": 104,
-      "bottom": 0,
-      "feathering": 0,
+      "left": 0,
+      "top": 400,
+      "right": 0,
+      "bottom": 400,
+      "feathering": 20,
       "image": [
         "140",
         0
