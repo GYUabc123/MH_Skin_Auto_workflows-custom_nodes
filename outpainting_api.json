@@ -1,7 +1,7 @@
 {
   "76": {
     "inputs": {
-      "image": "me_ernest_debs.jpg"
+      "image": "image (4).webp"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -68,7 +68,7 @@
   },
   "117": {
     "inputs": {
-      "text": "remove green area, extend and blend the image scene by referencing elements within the non-black regions while preserving original colors.",
+      "text": "remove gray area, extend and blend the image scene naturally with the original content while preserving original colors.",
       "clip": [
         "112",
         0
@@ -147,12 +147,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_dtuto_00057_.png&type=temp&subfolder=&rand=0.47757761530292464"
+            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00051_.png&type=temp&subfolder=&rand=0.8011095795296501"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_dtuto_00058_.png&type=temp&subfolder=&rand=0.420381664768097"
+            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00052_.png&type=temp&subfolder=&rand=0.0679709941600165"
           }
         ]
       },
@@ -186,8 +186,8 @@
   },
   "133": {
     "inputs": {
-      "seed": 885761706382275,
-      "steps": 8,
+      "seed": 295994950688886,
+      "steps": 14,
       "cfg": 2,
       "sampler_name": "euler",
       "scheduler": "simple",
@@ -197,16 +197,16 @@
         0
       ],
       "positive": [
-        "126",
+        "151",
         0
       ],
       "negative": [
-        "124",
-        0
+        "151",
+        1
       ],
       "latent_image": [
-        "125",
-        0
+        "151",
+        2
       ]
     },
     "class_type": "KSampler",
@@ -262,11 +262,11 @@
   },
   "147": {
     "inputs": {
-      "left": 400,
+      "left": 104,
       "top": 0,
-      "right": 400,
+      "right": 104,
       "bottom": 0,
-      "feathering": 40,
+      "feathering": 0,
       "image": [
         "140",
         0
@@ -279,7 +279,7 @@
   },
   "148": {
     "inputs": {
-      "color": "0, 255, 0",
+      "color": "128, 128, 128",
       "device": "cpu",
       "image": [
         "147",
@@ -312,6 +312,54 @@
     "class_type": "ColorMatch",
     "_meta": {
       "title": "Color Match"
+    }
+  },
+  "151": {
+    "inputs": {
+      "noise_mask": false,
+      "positive": [
+        "126",
+        0
+      ],
+      "negative": [
+        "124",
+        0
+      ],
+      "vae": [
+        "113",
+        0
+      ],
+      "pixels": [
+        "148",
+        0
+      ],
+      "mask": [
+        "152",
+        0
+      ]
+    },
+    "class_type": "InpaintModelConditioning",
+    "_meta": {
+      "title": "InpaintModelConditioning"
+    }
+  },
+  "152": {
+    "inputs": {
+      "face_mask": true,
+      "background_mask": false,
+      "hair_mask": false,
+      "body_mask": true,
+      "clothes_mask": false,
+      "confidence": 0.5,
+      "refine_mask": true,
+      "images": [
+        "147",
+        0
+      ]
+    },
+    "class_type": "APersonMaskGenerator",
+    "_meta": {
+      "title": "A Person Mask Generator"
     }
   }
 }
