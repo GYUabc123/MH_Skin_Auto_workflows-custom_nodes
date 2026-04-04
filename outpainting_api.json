@@ -1,23 +1,11 @@
 {
   "76": {
     "inputs": {
-      "image": "lebronoop.webp"
+      "image": "michaeljordan.webp"
     },
     "class_type": "LoadImage",
     "_meta": {
       "title": "Load Image"
-    }
-  },
-  "103": {
-    "inputs": {
-      "images": [
-        "148",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
     }
   },
   "109": {
@@ -68,7 +56,7 @@
   },
   "117": {
     "inputs": {
-      "text": " preserving original content, remove gray area, extend the image scene naturally only, and preserving original colors.",
+      "text": "Preserving original content, remove gray area, extend the image scene naturally only, and preserving original colors.",
       "clip": [
         "112",
         0
@@ -111,7 +99,7 @@
   "125": {
     "inputs": {
       "pixels": [
-        "148",
+        "147",
         0
       ],
       "vae": [
@@ -147,17 +135,17 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_zcyeh_00051_.png&type=temp&subfolder=&rand=0.08818577850120446"
+            "url": "/api/view?filename=rgthree.compare._temp_kcdpj_00021_.png&type=temp&subfolder=&rand=0.9550047861941565"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_zcyeh_00052_.png&type=temp&subfolder=&rand=0.7537109076113171"
+            "url": "/api/view?filename=rgthree.compare._temp_kcdpj_00022_.png&type=temp&subfolder=&rand=0.806850188986099"
           }
         ]
       },
       "image_a": [
-        "148",
+        "147",
         0
       ],
       "image_b": [
@@ -172,9 +160,9 @@
   },
   "133": {
     "inputs": {
-      "seed": 236963103059824,
-      "steps": 20,
-      "cfg": 4,
+      "seed": 113140365838169,
+      "steps": 8,
+      "cfg": 2,
       "sampler_name": "euler",
       "scheduler": "simple",
       "denoise": 1,
@@ -203,7 +191,7 @@
   "139": {
     "inputs": {
       "images": [
-        "140",
+        "147",
         0
       ]
     },
@@ -244,11 +232,11 @@
   },
   "147": {
     "inputs": {
-      "left": 0,
-      "top": 352,
-      "right": 0,
-      "bottom": 352,
-      "feathering": 10,
+      "left": 352,
+      "top": 0,
+      "right": 352,
+      "bottom": 0,
+      "feathering": 40,
       "image": [
         "140",
         0
@@ -257,24 +245,6 @@
     "class_type": "ImagePadForOutpaint",
     "_meta": {
       "title": "Pad Image for Outpainting"
-    }
-  },
-  "148": {
-    "inputs": {
-      "color": "128, 128, 128",
-      "device": "cpu",
-      "image": [
-        "147",
-        0
-      ],
-      "mask": [
-        "147",
-        1
-      ]
-    },
-    "class_type": "DrawMaskOnImage",
-    "_meta": {
-      "title": "Draw Mask On Image"
     }
   },
   "149": {
@@ -298,7 +268,7 @@
   },
   "151": {
     "inputs": {
-      "noise_mask": false,
+      "noise_mask": true,
       "positive": [
         "126",
         0
@@ -312,7 +282,7 @@
         0
       ],
       "pixels": [
-        "148",
+        "147",
         0
       ],
       "mask": [
@@ -323,6 +293,18 @@
     "class_type": "InpaintModelConditioning",
     "_meta": {
       "title": "InpaintModelConditioning"
+    }
+  },
+  "152": {
+    "inputs": {
+      "mask": [
+        "147",
+        1
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "遮罩预览"
     }
   }
 }
