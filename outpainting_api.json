@@ -1,7 +1,7 @@
 {
   "76": {
     "inputs": {
-      "image": "michaeljordan.webp"
+      "image": "lebronoop.webp"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -68,7 +68,7 @@
   },
   "117": {
     "inputs": {
-      "text": "remove gray area, extend and blend the image scene naturally with the original content while preserving original colors.",
+      "text": " preserving original content, remove gray area, extend the image scene naturally only, and preserving original colors.",
       "clip": [
         "112",
         0
@@ -81,7 +81,7 @@
   },
   "118": {
     "inputs": {
-      "text": "text, worst quality, blurry, ugly, color shift",
+      "text": "text, worst quality, blurry, ugly, color shift, legs, feet, limbs, body parts, person, human, full body\n\n",
       "clip": [
         "112",
         0
@@ -147,12 +147,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00083_.png&type=temp&subfolder=&rand=0.346881629136494"
+            "url": "/api/view?filename=rgthree.compare._temp_zcyeh_00051_.png&type=temp&subfolder=&rand=0.08818577850120446"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_hczxz_00084_.png&type=temp&subfolder=&rand=0.06211665717258341"
+            "url": "/api/view?filename=rgthree.compare._temp_zcyeh_00052_.png&type=temp&subfolder=&rand=0.7537109076113171"
           }
         ]
       },
@@ -170,30 +170,16 @@
       "title": "Image Comparer (rgthree)"
     }
   },
-  "132": {
-    "inputs": {
-      "lora_name": "FLUX.1-Turbo-Alpha.safetensors",
-      "strength_model": 1,
-      "model": [
-        "111",
-        0
-      ]
-    },
-    "class_type": "LoraLoaderModelOnly",
-    "_meta": {
-      "title": "Load LoRA"
-    }
-  },
   "133": {
     "inputs": {
-      "seed": 304708932773483,
-      "steps": 14,
-      "cfg": 2,
+      "seed": 236963103059824,
+      "steps": 20,
+      "cfg": 4,
       "sampler_name": "euler",
       "scheduler": "simple",
       "denoise": 1,
       "model": [
-        "132",
+        "111",
         0
       ],
       "positive": [
@@ -249,11 +235,7 @@
   },
   "143": {
     "inputs": {
-      "filename_prefix": "outpaint-top-bottom",
-      "images": [
-        "149",
-        0
-      ]
+      "filename_prefix": "outpaint-top-bottom"
     },
     "class_type": "SaveImage",
     "_meta": {
@@ -263,10 +245,10 @@
   "147": {
     "inputs": {
       "left": 0,
-      "top": 400,
+      "top": 352,
       "right": 0,
-      "bottom": 400,
-      "feathering": 20,
+      "bottom": 352,
+      "feathering": 10,
       "image": [
         "140",
         0
@@ -334,8 +316,8 @@
         0
       ],
       "mask": [
-        "152",
-        0
+        "147",
+        1
       ]
     },
     "class_type": "InpaintModelConditioning",
@@ -343,23 +325,11 @@
       "title": "InpaintModelConditioning"
     }
   },
-  "152": {
-    "inputs": {
-      "face_mask": true,
-      "background_mask": false,
-      "hair_mask": false,
-      "body_mask": true,
-      "clothes_mask": false,
-      "confidence": 0.5,
-      "refine_mask": true,
-      "images": [
-        "147",
-        0
-      ]
-    },
-    "class_type": "APersonMaskGenerator",
+  "153": {
+    "inputs": {},
+    "class_type": "MaskPreview+",
     "_meta": {
-      "title": "A Person Mask Generator"
+      "title": "🔧 Mask Preview"
     }
   }
 }
