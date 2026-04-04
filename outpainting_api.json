@@ -223,7 +223,11 @@
   },
   "143": {
     "inputs": {
-      "filename_prefix": "outpaint-top-bottom"
+      "filename_prefix": "outpaint-top-bottom",
+      "images": [
+        "149",
+        0
+      ]
     },
     "class_type": "SaveImage",
     "_meta": {
@@ -293,18 +297,6 @@
     "class_type": "InpaintModelConditioning",
     "_meta": {
       "title": "InpaintModelConditioning"
-    }
-  },
-  "152": {
-    "inputs": {
-      "mask": [
-        "147",
-        1
-      ]
-    },
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "遮罩预览"
     }
   }
 }
