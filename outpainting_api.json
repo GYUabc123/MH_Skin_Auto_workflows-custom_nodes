@@ -56,7 +56,7 @@
   },
   "117": {
     "inputs": {
-      "text": "Preserving original content, remove gray area, extend the image scene naturally only, and preserving original colors.",
+      "text": "Preserving original content, remove gray area, extend the image scene naturally only, and preserving original colors. seamless",
       "clip": [
         "112",
         0
@@ -135,12 +135,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kcdpj_00021_.png&type=temp&subfolder=&rand=0.9550047861941565"
+            "url": "/api/view?filename=rgthree.compare._temp_jxuut_00045_.png&type=temp&subfolder=&rand=0.5104202867785966"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kcdpj_00022_.png&type=temp&subfolder=&rand=0.806850188986099"
+            "url": "/api/view?filename=rgthree.compare._temp_jxuut_00046_.png&type=temp&subfolder=&rand=0.5796315614335803"
           }
         ]
       },
@@ -160,7 +160,7 @@
   },
   "133": {
     "inputs": {
-      "seed": 113140365838169,
+      "seed": 10773135118242,
       "steps": 8,
       "cfg": 2,
       "sampler_name": "euler",
@@ -221,26 +221,13 @@
       "title": "Scale By Ratio"
     }
   },
-  "143": {
-    "inputs": {
-      "filename_prefix": "outpaint-top-bottom",
-      "images": [
-        "149",
-        0
-      ]
-    },
-    "class_type": "SaveImage",
-    "_meta": {
-      "title": "Save Image"
-    }
-  },
   "147": {
     "inputs": {
       "left": 352,
       "top": 0,
       "right": 352,
       "bottom": 0,
-      "feathering": 40,
+      "feathering": 20,
       "image": [
         "140",
         0
@@ -254,10 +241,10 @@
   "149": {
     "inputs": {
       "method": "mkl",
-      "strength": 0.4,
+      "strength": 0.1,
       "multithread": true,
       "image_ref": [
-        "140",
+        "147",
         0
       ],
       "image_target": [
@@ -272,7 +259,7 @@
   },
   "151": {
     "inputs": {
-      "noise_mask": true,
+      "noise_mask": false,
       "positive": [
         "126",
         0
