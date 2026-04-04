@@ -324,12 +324,5 @@
     "_meta": {
       "title": "InpaintModelConditioning"
     }
-  },
-  "153": {
-    "inputs": {},
-    "class_type": "MaskPreview+",
-    "_meta": {
-      "title": "🔧 Mask Preview"
-    }
   }
 }
