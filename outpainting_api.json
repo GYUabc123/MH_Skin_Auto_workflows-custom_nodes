@@ -221,6 +221,19 @@
       "title": "Scale By Ratio"
     }
   },
+  "143": {
+    "inputs": {
+      "filename_prefix": "outpaint-top-bottom",
+      "images": [
+        "149",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
   "147": {
     "inputs": {
       "left": 352,
